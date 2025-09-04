@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таврический колледж - Мои оценки</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> Таврический колледж</h1>
+            <p class="description">Электронный журнал колледжа</p>
+        </header>
+        
+        <div class="content">
+            <div class="student-info">
+                <h3><i class="fas fa-user-graduate"></i> Информация о студенте</h3>
+                <p id="student-details">Загрузка...</p>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-calendar-alt"></i> Выбор месяца</h2>
+                <div class="month-selector">
+                    <label for="month-select"><i class="fas fa-filter"></i> Выберите месяц:</label>
+                    <select id="month-select">
+                        <option value="Сентябрь">Сентябрь</option>
+                        <option value="Октябрь">Октябрь</option>
+                        <option value="Ноябрь">Ноябрь</option>
+                        <option value="Декабрь">Декабрь</option>
+                        <option value="Январь">Январь</option>
+                        <option value="Февраль">Февраль</option>
+                        <option value="Март">Март</option>
+                        <option value="Апрель">Апрель</option>
+                        <option value="Май">Май</option>
+                        <option value="Июнь">Июнь</option>
+                        <option value="Июль">Июль</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-chart-line"></i> Ваши оценки</h2>
+                <div id="grades-container" class="grades-grid">
+                    <div class="loading">
+                        <i class="fas fa-spinner"></i>
+                        <p>Загрузка оценок...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn-container">
+                <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Выйти из системы</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

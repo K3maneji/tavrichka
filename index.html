@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таврический колледж - Вход в систему</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <div class="code-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="loader-text">Таврический колледж</div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> Таврический колледж</h1>
+            <p class="description">Электронный журнал колледжа</p>
+        </header>
+        
+        <div class="content">
+            <div class="section">
+                <h2><i class="fas fa-sign-in-alt"></i> Вход в систему</h2>
+                <div class="form-group">
+                    <label for="student-id"><i class="fas fa-id-card"></i> Введите ваш ID:</label>
+                    <input type="text" id="student-id" placeholder="Например: 1001">
+                </div>
+                <button class="btn" id="login-btn"><i class="fas fa-lock-open"></i> Войти в журнал</button>
+                
+                <div class="instructions">
+                    <h3><i class="fas fa-info-circle"></i> Как получить ID?</h3>
+                    <p>Ваш персональный ID вы можете получить у классного руководителя (куратора).</p>
+                </div>
+            </div>
+            
+            <div id="error-message" class="error hidden"></div>
+        </div>
+    </div>
+
+    <script src="js/script2.js"></script>
+</body>
+</html>
