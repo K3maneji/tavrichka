@@ -10,7 +10,7 @@
 
         // Список месяцев для оценок
         const months = [
-            'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь',
+            'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь', 'Семестровые оценки',
             'Январь', 'Февраль', 'Март', 'Апрель', 
             'Май', 'Июнь', 'Июль'
         ];
@@ -106,4 +106,5 @@
             errorMessage.textContent = message;
             errorMessage.classList.remove('hidden');
             setTimeout(() => errorMessage.classList.add('hidden'), 4000);
+
         }
