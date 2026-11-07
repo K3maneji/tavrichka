@@ -1,5 +1,5 @@
 // Вставьте сюда URL развернутого веб-приложения Apps Script (заканчивается на /exec).
-window.TAVRICHKA_API_URL = 'ВСТАВЬТЕ_URL_ВЕБ_ПРИЛОЖЕНИЯ_APPS_SCRIPT';
+window.TAVRICHKA_API_URL = 'https://script.google.com/macros/s/AKfycbw-x2UwVJ1AlHfFgYE1TmOGyMk01g6Gw2XZtThtmSteq70cOQJdMUCDJmlydFlhFvLR/exec';
 
 window.TavrichkaApi = (() => {
     let callbackCounter = 0;
