@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Таврический колледж - Мои оценки</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> Таврический колледж</h1>
+            <p class="description">Электронный журнал колледжа</p>
+        </header>
+        
+        <div class="content">
+            <div class="student-info">
+                <h3><i class="fas fa-user-graduate"></i> Информация о студенте</h3>
+                <p id="student-details">Загрузка...</p>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-calendar-alt"></i> Выбор месяца</h2>
+                <div class="month-selector">
+                    <label for="month-select"><i class="fas fa-filter"></i> Выберите месяц:</label>
+                    <select id="month-select" aria-label="Выберите раздел журнала">
+                        <option value="">Загрузка разделов...</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-chart-line"></i> Ваши оценки</h2>
+                <div id="grades-container" class="grades-grid">
+                    <div class="loading">
+                        <i class="fas fa-spinner"></i>
+                        <p>Загрузка оценок...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn-container">
+                <a href="index.html" class="logout-btn" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Выйти из системы</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
